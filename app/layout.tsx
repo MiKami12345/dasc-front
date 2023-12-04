@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body style={{ margin: 0, padding: 0 }}>
         <ThemeRegistry options={{ key: 'mui' }}>
           <Box sx={{ bgcolor: '#F4F4F4', minHeight: '100vh' }}>
-            <Container maxWidth="xs" sx={{ padding: 0 }}>
+            <Container fixed sx={{ padding: 0 }}>
               <Paper sx={{ px: 0, bgcolor: 'white', minHeight: '100vh' }}>
                 <Header />
                 {children}
